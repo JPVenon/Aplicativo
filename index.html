@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <link rel="stylesheet" href="./style.css" type="text/css"></link>
+</head>
+<body>
+    <section>
+        <H1>login</H1>
+        <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="field">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <div class="field">
+            <label for="confirmar-senha">Confirmar senha</label>
+            <input type="password" name="confirmar-senha" id="confirmar-senha">
+        </div>
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+    </section>
+    <script src="index.js"></script>
+    <script>
+        function validarFormulario() {
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+            var confirmarSenha = document.getElementById('confirmar-senha').value;
+
+            if (email === '' || senha === '' || confirmarSenha === '') {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem.');
+                return;
+            }
+
+            // Adicione aqui a lógica para enviar o formulário ou fazer outras ações necessárias
+            alert('Formulário válido. Enviando...');
+        }
+    </script>
+</body>
+</html>
