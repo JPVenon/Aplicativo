@@ -1,8 +1,8 @@
 <?php
-$host = 'seu_host_mysql';
-$usuario = 'seu_usuario_mysql';
-$senha = 'sua_senha_mysql';
-$bancoDados = 'seu_banco_de_dados';
+$host = 'usoarios';
+$usuario = 'root';
+$senha = 'WAlh,4484';
+$bancoDados = 'BANCO';
 
 $conexao = new mysqli($host, $usuario, $senha, $bancoDados);
 
