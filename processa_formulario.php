@@ -11,7 +11,7 @@
 
     function enviarDadosParaPHP(email, senha) {
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'processa_formulario.php', true);
+        xhr.open('POST', 'processo_formulario.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
         xhr.onreadystatechange = function () {
