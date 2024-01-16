@@ -1,5 +1,5 @@
 <?php
-$host = 'usoarios';
+$host = 'usuarios';
 $usuario = 'root';
 $senha = 'WAlh,4484';
 $bancoDados = 'BANCO';
